@@ -1,0 +1,135 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import 'fonts';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~admin-lte/dist/css/adminlte.css';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffb400;
+}
+
+
+/* BEGIN ADMIN PANEL */
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+/* BEGIN ICONS */
+.top-20per{
+    top:20% !important;
+}
+/* END OF ICONS */
+
+/* BEGIN CONTENT */
+.content-wrapper > .content {
+    padding: 0 0.5rem ;
+}
+/* END OF CONTENT */
+
+/* BEGIN GALLERIES */
+.attachment-img{
+    max-width: 100px;
+}
+
+.attachment-img.img-fluid{
+    transform: scale(1);
+    transition: 0.3s ease-in;
+    border-radius:5px;
+}
+.attachment-img.img-fluid:hover{
+    transform: scale(1.3);
+}
+
+#magnifier{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #000000aa;
+    transition: 0.3s ease-in;
+}
+#magnifier.show{
+    visibility: visible;
+    opacity: 1;
+}
+#lbInner{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%) ;
+}
+#lbInner img{
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    border-radius:15px;
+}
+
+.profile-user-img{
+    height: 100px !important;
+}
+.user-panel img {
+    height: 2.1rem;
+    width: 2.1rem;
+}
+/* END OF GALLERIES */
+
+/* END OF ADMIN PANEL */
+
+.rtl{
+    direction: rtl;
+    text-align: right;
+}
+.ltr{
+    direction: ltr;
+    text-align: left;
+}
+
+.irsans{
+    font-family: IRSans, serif;
+}
+.img-size-50 {
+    height: 50px;
+}
+.invalid-feedback{
+    display: block;
+}
+
+li.skill{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #6c757d;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: #6c757d;
+}
